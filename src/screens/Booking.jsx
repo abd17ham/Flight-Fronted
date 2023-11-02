@@ -27,7 +27,7 @@ const Booking = () => {
   const fetchFlight = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/v1/flights/" + id
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/flights/" + id
     );
     const data = await response.json();
     if (data.status === "success") {

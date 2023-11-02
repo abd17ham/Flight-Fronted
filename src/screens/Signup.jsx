@@ -36,7 +36,7 @@ const Signup = () => {
   const createUser = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/v1/users/signup",
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/users/signup",
       {
         method: "POST",
         headers: {

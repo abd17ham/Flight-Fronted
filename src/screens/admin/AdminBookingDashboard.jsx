@@ -21,7 +21,7 @@ const AdminBookingDashboard = () => {
   const fetchBookings = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/v1/bookings"
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/bookings"
     );
     const data = await response.json();
     // console.log(data);

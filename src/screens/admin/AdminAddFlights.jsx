@@ -28,7 +28,7 @@ const AdminAddFlights = () => {
     setLoading(true);
     if (token) {
       const response = await fetch(
-        "http://localhost:8000/api/v1/flights/",
+        "https://modern-life-jacket-crow.cyclic.app/api/v1/flights/",
         {
           method: "POST",
           headers: {

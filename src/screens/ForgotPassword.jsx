@@ -10,7 +10,7 @@ const ForgotPassword = () => {
   const sendResetToken = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/v1/users/forgotpassword",
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/users/forgotpassword",
       {
         method: "POST",
         headers: {

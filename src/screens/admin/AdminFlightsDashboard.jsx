@@ -50,7 +50,7 @@ const AdminFlightsDashboard = () => {
 
   const fetchFlights = async () => {
     const response = await fetch(
-      "http://localhost:8000/api/v1/flights/"
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/flights/"
     );
     const data = await response.json();
     if (data.status === "success") {

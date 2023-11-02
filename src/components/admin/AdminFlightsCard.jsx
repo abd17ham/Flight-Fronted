@@ -32,7 +32,7 @@ const AdminFlightsCard = ({ flight, setLoading }) => {
     setLoading(true);
     if (token) {
       const response = await fetch(
-        `http://localhost:8000/api/v1/flights/${deleteFlightId}`,
+        `https://modern-life-jacket-crow.cyclic.app/api/v1/flights/${deleteFlightId}`,
         {
           method: "DELETE",
           headers: {

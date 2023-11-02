@@ -47,7 +47,7 @@ const Home = () => {
     const fetchAirports = async () => {
       setLoading(true);
       const response = await fetch(
-        "http://localhost:8000/api/v1/flights/airports"
+        "https://modern-life-jacket-crow.cyclic.app/api/v1/flights/airports"
       );
       const data = await response.json();
       if (data.status === "success") {
@@ -64,7 +64,7 @@ const Home = () => {
 
   const fetchFlights = async () => {
     const response = await fetch(
-      "http://localhost:8000/api/v1/flights/"
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/flights/"
     );
     const data = await response.json();
     if (data.status === "success") {

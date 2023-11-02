@@ -20,7 +20,7 @@ const ResetPassword = () => {
   const resetPassword = async () => {
     setLoading(true);
     const response = await fetch(
-      `http://localhost:8000/api/v1/users/resetPassword/${token}`,
+      `https://modern-life-jacket-crow.cyclic.app/api/v1/users/resetPassword/${token}`,
       {
         method: "POST",
         headers: {

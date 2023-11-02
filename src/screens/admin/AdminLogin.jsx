@@ -26,7 +26,7 @@ const AdminLogin = () => {
   const loginUser = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/v1/users/admin/login",
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/users/admin/login",
       {
         method: "POST",
         headers: {

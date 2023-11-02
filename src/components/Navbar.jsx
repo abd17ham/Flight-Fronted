@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const handleLogout = async (e) => {
     const response = await fetch(
-      "http://localhost:8000/api/v1/users/logout"
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/users/logout"
     );
     const data = await response.json();
     if (data.status === "success") {

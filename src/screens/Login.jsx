@@ -27,7 +27,7 @@ const Login = () => {
   const loginUser = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/v1/users/login",
+      "https://modern-life-jacket-crow.cyclic.app/api/v1/users/login",
       {
         method: "POST",
         headers: {
